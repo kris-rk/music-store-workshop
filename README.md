@@ -5,6 +5,13 @@ A customer-support **deep agent** for a fictional online record store, built on
 over the [Chinook](https://github.com/lerocha/chinook-database) sample database, with a
 security-hardened middleware stack and a full [LangSmith](https://smith.langchain.com)
 evaluation harness that proves the hardening matters.
+---
+
+## Why OSS & Langsmith?
+The Langchain ecosystem is a great use for this use case because the problem requires a system handling multiple LLM calls at multiple different levels: In order to handle complex requests, delegate tasks, and leverage tools to return a clear response to the user, Deep Agents provide an new level of versatility to give the developer extended flexibility in how they want to structure their agent. Langgraph provides the execution model for this, allowing state and memory to be saved for more advanced workflows(e.g. Human Escalation). The best part is that all of this software is Open-Source, and is accessible to developers from all types of engineering backgrounds.
+Langsmith completes and expands the Agent Development process by allowing the developer to monitor and evaluate their agentic system, which allows for a one-of-a-kind experience in refining an agent.
+
+Together, these capabilities allow a growing local business to move beyond a basic chatbot and build a customer support experience that can intelligently handle complex requests while maintaining visibility, control, and a path to human support, while saving employee time and operational overhead.
 
 This README is written to be read in under 5 minutes: what the pieces are, what `agent.py`
 actually does method-by-method, and what the evaluators measure.
